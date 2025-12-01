@@ -20,10 +20,9 @@ const About = () => {
               loading="lazy"
             />
             <div className="z-10">
-              <p className="headtext">Hi, I'm Ali Sanati</p>
+              <p className="headtext">Hi, I'm Priyanshu Singh</p>
               <p className="subtext">
-                Over the last 4 years, I have honed both frontend and backend
-                skills to deliver performant, animated web experiences.
+               BTech in Computer Science | Development Team Member @Vikasana | DSA in JAVA | Snapchat Opinion Leader @Under25 | GSSOC Open-source Contributor 2024, 2025 | Aspiring DevOps
               </p>
             </div>
             <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 bg-gradient-to-t from-indigo" />
@@ -35,49 +34,51 @@ const About = () => {
               ref={grid2Container}
               className="flex items-center justify-center w-full h-full"
             >
-              <p className="flex items-end text-5xl text-gray-500">
+              <p className="flex items-end text-5xl text-gray-500 font-bold opacity-40">
                 CODE IS CRAFT
               </p>
+              
+              {/* 1. Design Principles (Keep these, they are universal) */}
               <Card
-                style={{ rotate: "75deg", top: "30%", left: "20%" }}
-                text="GRASP"
+                style={{ rotate: "15deg", top: "10%", left: "10%" }}
+                text="Clean Code"
                 containerRef={grid2Container}
               />
               <Card
-                style={{ rotate: "-30deg", top: "60%", left: "45%" }}
+                style={{ rotate: "-10deg", top: "20%", left: "60%" }}
                 text="SOLID"
                 containerRef={grid2Container}
               />
               <Card
-                style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
-                text="Design Patterns"
+                style={{ rotate: "5deg", top: "50%", left: "40%" }}
+                text="Dry"
                 containerRef={grid2Container}
               />
               <Card
-                style={{ rotate: "-45deg", top: "55%", left: "0%" }}
-                text="Design Principles"
+                style={{ rotate: "-20deg", top: "60%", left: "10%" }}
+                text="Scalability"
+                containerRef={grid2Container}
+              />
+
+              {/* 2. React Ecosystem (Replaced C#/.NET) */}
+              {/* Using your existing react.svg */}
+              <Card
+                style={{ rotate: "15deg", top: "70%", left: "60%" }}
+                image="/assets/react.svg" 
+                containerRef={grid2Container}
+              />
+              {/* Using Text for others to be safe */}
+              <Card
+                style={{ rotate: "-10deg", top: "80%", left: "20%" }}
+                text="Tailwind"
                 containerRef={grid2Container}
               />
               <Card
-                style={{ rotate: "20deg", top: "10%", left: "38%" }}
-                text="SRP"
+                style={{ rotate: "10deg", top: "40%", left: "80%" }}
+                text="Next.js"
                 containerRef={grid2Container}
               />
-              <Card
-                style={{ rotate: "30deg", top: "70%", left: "70%" }}
-                image="assets/logos/csharp-pink.png"
-                containerRef={grid2Container}
-              />
-              <Card
-                style={{ rotate: "-45deg", top: "70%", left: "25%" }}
-                image="assets/logos/dotnet-pink.png"
-                containerRef={grid2Container}
-              />
-              <Card
-                style={{ rotate: "-45deg", top: "5%", left: "10%" }}
-                image="assets/logos/blazor-pink.png"
-                containerRef={grid2Container}
-              />
+              
             </div>
           </div>
 
@@ -86,7 +87,7 @@ const About = () => {
             <div className="z-10 max-w-[60%]">
               <p className="headtext">Time Zone</p>
               <p className="subtext">
-                I'm based in Mars and open to collaborating across all time zones.
+                I'm based in Bangalore, India and open to collaborating across all time zones.
               </p>
             </div>
             <figure className="absolute left-[35%] top-[5%] scale-95 md:scale-100">
@@ -106,7 +107,7 @@ const About = () => {
             <CopyEmailButton />
           </div>
 
-          {/* Tech stack */}
+        {/* Tech stack */}
           <div className="grid-default-color relative col-span-1 md:col-span-2 xl:col-span-1 xl:row-span-2 overflow-hidden">
             <div className="z-10 space-y-3 max-w-[70%]">
               <p className="headtext">Tech Stack</p>
@@ -115,7 +116,9 @@ const About = () => {
                 keep products fast, accessible, and delightful.
               </p>
             </div>
-            <div className="absolute inset-y-0 right-0 flex items-center justify-end w-full h-full md:scale-110">
+            
+            {/* FIX: removed 'pr-12', added 'translate-x-1/3' to push it right */}
+            <div className="absolute inset-y-0 right-0 flex items-center justify-end w-full h-full md:scale-110 translate-x-2/3">
               <Frameworks />
             </div>
           </div>
