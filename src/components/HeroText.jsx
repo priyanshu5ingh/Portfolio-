@@ -21,7 +21,7 @@ const HeroText = () => {
           animate="visible"
           transition={{ delay: 1 }}
         >
-          Hi, I'm Priyanshu
+          Hi, I'm Priyanshu Singh
         </motion.h1>
         
         <div className="flex flex-col items-start">
@@ -32,7 +32,7 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 1.2 }}
           >
-            A Student <br /> Dedicated to Crafting
+            DevOps Aspirant & <br /> Full-Stack Developer Building
           </motion.p>
           
           <motion.div
@@ -54,7 +54,7 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 1.8 }}
           >
-            Web Solutions
+            Infrastructure & Apps
           </motion.p>
         </div>
       </div>
@@ -68,7 +68,7 @@ const HeroText = () => {
           animate="visible"
           transition={{ delay: 1 }}
         >
-          Hi, I'm Priyanshu
+          Hi, I'm Priyanshu Singh
         </motion.p>
         
         <div>
@@ -79,7 +79,7 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 1.2 }}
           >
-            Building
+            DevOps & Full-Stack
           </motion.p>
           
           <motion.div

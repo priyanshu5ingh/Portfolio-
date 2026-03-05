@@ -22,7 +22,7 @@ const About = () => {
             <div className="z-10">
               <p className="headtext">Hi, I'm Priyanshu Singh</p>
               <p className="subtext">
-               BTech in Computer Science | Development Team Member @Vikasana | DSA in JAVA | Snapchat Opinion Leader @Under25 | GSSOC Open-source Contributor 2024, 2025 | Aspiring DevOps
+                A DevOps‑focused Computer Science student and web developer who builds reliable, automated infrastructure and polished web apps. I work with CI/CD, containerization, and IaC (Docker, Kubernetes, Terraform) alongside cloud platforms like AWS, and I build full‑stack experiences with React, Node.js, and PostgreSQL.
               </p>
             </div>
             <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 bg-gradient-to-t from-indigo" />
@@ -35,10 +35,10 @@ const About = () => {
               className="flex items-center justify-center w-full h-full"
             >
               <p className="flex items-end text-5xl text-gray-500 font-bold opacity-40">
-                CODE IS CRAFT
+                DEVOPS & CODE
               </p>
               
-              {/* 1. Design Principles (Keep these, they are universal) */}
+              {/* 1. Design Principles */}
               <Card
                 style={{ rotate: "15deg", top: "10%", left: "10%" }}
                 text="Clean Code"
@@ -46,36 +46,34 @@ const About = () => {
               />
               <Card
                 style={{ rotate: "-10deg", top: "20%", left: "60%" }}
-                text="SOLID"
+                text="CI/CD"
                 containerRef={grid2Container}
               />
               <Card
                 style={{ rotate: "5deg", top: "50%", left: "40%" }}
-                text="Dry"
+                text="Docker"
                 containerRef={grid2Container}
               />
               <Card
                 style={{ rotate: "-20deg", top: "60%", left: "10%" }}
-                text="Scalability"
+                text="Kubernetes"
                 containerRef={grid2Container}
               />
 
-              {/* 2. React Ecosystem (Replaced C#/.NET) */}
-              {/* Using your existing react.svg */}
+              {/* 2. Technologies */}
               <Card
                 style={{ rotate: "15deg", top: "70%", left: "60%" }}
-                image="/assets/react.svg" 
+                text="AWS"
                 containerRef={grid2Container}
               />
-              {/* Using Text for others to be safe */}
               <Card
                 style={{ rotate: "-10deg", top: "80%", left: "20%" }}
-                text="Tailwind"
+                text="Terraform"
                 containerRef={grid2Container}
               />
               <Card
                 style={{ rotate: "10deg", top: "40%", left: "80%" }}
-                text="Next.js"
+                text="React"
                 containerRef={grid2Container}
               />
               
@@ -112,8 +110,7 @@ const About = () => {
             <div className="z-10 space-y-3 max-w-[70%]">
               <p className="headtext">Tech Stack</p>
               <p className="subtext">
-                I specialize in an ecosystem of languages, frameworks, and tools that
-                keep products fast, accessible, and delightful.
+                I specialize in DevOps and full‑stack web development with Docker, Kubernetes, Terraform, CI/CD, AWS, React, Node.js, TypeScript, and PostgreSQL.
               </p>
             </div>
             

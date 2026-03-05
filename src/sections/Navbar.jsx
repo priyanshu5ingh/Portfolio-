@@ -83,7 +83,7 @@ const Navbar = () => {
               if (isMobile) setIsOpen(false);
             }}
           >
-            Ali
+            Priyanshu
           </a>
           
           <div className="flex items-center space-x-4">
