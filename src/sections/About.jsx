@@ -2,7 +2,7 @@ import { useRef } from "react";
 import Card from "../components/Card";
 import { Globe } from "../components/globe";
 import CopyEmailButton from "../components/CopyEmailButton";
-import { Frameworks } from "../components/FrameWorks";
+import { Frameworks } from "../components/Frameworks";
 
 const About = () => {
   const grid2Container = useRef();
@@ -126,3 +126,4 @@ const About = () => {
 };
 
 export default About;
+// Note : the above code is a bit long , so i have added the context of other files to give you a batter understanding of the project structure and the components used in the above code.
