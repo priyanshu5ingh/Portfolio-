@@ -60,10 +60,10 @@ const Contact = () => {
         refresh
       />
       {showAlert && <Alert type={alertType} text={alertMessage} />}
-      <div className="flex flex-col items-center justify-center max-w-md p-5 mx-auto border border-white/10 rounded-2xl bg-primary">
+      <div className="flex flex-col items-center justify-center max-w-md p-5 mx-auto border rounded-2xl bg-white/90 dark:bg-primary border-slate-300/80 dark:border-white/10">
         <div className="flex flex-col items-start w-full gap-5 mb-10">
           <h2 className="text-heading">Let's Talk</h2>
-          <p className="font-normal text-neutral-400">
+          <p className="font-normal text-slate-600 dark:text-neutral-400">
             Whether you're looking to build a new website, improve your existing
             platform, or bring a unique project to life, I'm here to help.
           </p>

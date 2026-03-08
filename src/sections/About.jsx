@@ -93,20 +93,8 @@ const About = () => {
             </figure>
           </div>
 
-          {/* CTA */}
-          <div className="grid-special-color flex flex-col items-center justify-center gap-4 col-span-1 md:col-span-2 xl:col-span-2 xl:row-span-3">
-            <p className="text-center headtext">
-              Do you want to start a project together?
-            </p>
-            <p className="subtext text-center max-w-xl">
-              I love turning ambitious ideas into delightful digital experiences.
-              Drop me a line and let's build something memorable.
-            </p>
-            <CopyEmailButton />
-          </div>
-
-        {/* Tech stack */}
-          <div className="grid-default-color relative col-span-1 md:col-span-2 xl:col-span-1 xl:row-span-2 overflow-hidden">
+          {/* Tech stack */}
+          <div className="grid-default-color relative col-span-1 md:col-span-1 xl:col-span-1 xl:row-span-2 overflow-hidden">
             <div className="z-10 space-y-3 max-w-[70%]">
               <p className="headtext">Tech Stack</p>
               <p className="subtext">
@@ -118,6 +106,18 @@ const About = () => {
             <div className="absolute inset-y-0 right-0 flex items-center justify-end w-full h-full md:scale-110 translate-x-2/3">
               <Frameworks />
             </div>
+          </div>
+
+          {/* CTA */}
+          <div className="grid-special-color flex flex-col items-center justify-center gap-4 col-span-1 md:col-span-2 xl:col-span-2 xl:row-span-3">
+            <p className="text-center headtext">
+              Do you want to start a project together?
+            </p>
+            <p className="subtext text-center max-w-xl">
+              I love turning ambitious ideas into delightful digital experiences.
+              Drop me a line and let's build something memorable.
+            </p>
+            <CopyEmailButton />
           </div>
         </div>
       </div>
