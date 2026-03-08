@@ -99,7 +99,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/lawtool.jpg",
+    image: "/assets/projects/lawtool5.jpg",
     tags: [
       {
         id: 1,
@@ -391,3 +391,7 @@ export const reviews = [
     img: "https://robohash.org/eve",
   },
 ];
+
+export const resumeData = {
+  filePath: "/assets/Priyanshu-Singh-Resume.pdf",
+};

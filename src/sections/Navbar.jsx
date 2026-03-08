@@ -7,6 +7,7 @@ function Navigation({ isMobile = false, onNavigate }) {
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
     { id: 'work', label: 'Work' },
+    { id: 'resume', label: 'Resume' },
     { id: 'contact', label: 'Contact' }
   ];
 
