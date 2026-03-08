@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from '../contexts/ThemeContext';
 
-function Navigation({ isMobile = false, onNavigate }) {
+function Navigation({ isMobile = false, onNavigate, theme }) {
   const navItems = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
@@ -23,7 +23,9 @@ function Navigation({ isMobile = false, onNavigate }) {
         <li key={item.id}>
           <a
             href={`#${item.id}`}
-            className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
+            className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+              theme === 'dark' ? 'text-gray-300 hover:text-white' : 'text-slate-700 hover:text-slate-900'
+            }`}
             onClick={(e) => handleClick(e, item.id)}
           >
             {item.label}
@@ -72,12 +74,18 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40 dark:bg-gray-900/80 transition-colors duration-300">
+    <nav
+      className={`fixed inset-x-0 z-20 w-full backdrop-blur-lg transition-colors duration-300 ${
+        theme === 'dark' ? 'bg-primary/40' : 'bg-white/70 border-b border-slate-200/60'
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <a
             href="#home"
-            className="text-xl font-bold transition-colors text-gray-300 hover:text-white"
+            className={`text-xl font-bold transition-colors ${
+              theme === 'dark' ? 'text-gray-300 hover:text-white' : 'text-slate-800 hover:text-black'
+            }`}
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -90,13 +98,15 @@ const Navbar = () => {
           <div className="flex items-center space-x-4">
             {/* Desktop Navigation */}
             <div className="hidden sm:block">
-              <Navigation />
+              <Navigation theme={theme} />
             </div>
 
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-full text-gray-300 hover:bg-gray-700 focus:outline-none"
+              className={`p-2 rounded-full focus:outline-none transition-colors ${
+                theme === 'dark' ? 'text-gray-300 hover:bg-gray-700' : 'text-slate-700 hover:bg-slate-200'
+              }`}
               aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
             >
               {theme === 'dark' ? (
@@ -114,7 +124,9 @@ const Navbar = () => {
             <div className="sm:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="p-2 rounded-md text-gray-300 hover:bg-gray-700 focus:outline-none"
+                className={`p-2 rounded-md focus:outline-none transition-colors ${
+                  theme === 'dark' ? 'text-gray-300 hover:bg-gray-700' : 'text-slate-700 hover:bg-slate-200'
+                }`}
                 aria-expanded={isOpen}
                 aria-label={isOpen ? 'Close menu' : 'Open menu'}
               >
@@ -152,14 +164,14 @@ const Navbar = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="sm:hidden bg-gray-800"
+            className={`sm:hidden ${theme === 'dark' ? 'bg-gray-800' : 'bg-white border-t border-slate-200/60'}`}
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
           >
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <Navigation isMobile onNavigate={() => setIsOpen(false)} />
+              <Navigation isMobile theme={theme} onNavigate={() => setIsOpen(false)} />
             </div>
           </motion.div>
         )}

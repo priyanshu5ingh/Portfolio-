@@ -4,12 +4,23 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --page-bg: #f5f7fb;
+  --page-text: #0f172a;
+}
+
+.dark {
+  --page-bg: #030412;
+  --page-text: #ffffff;
+}
+
 body {
-  background: #030412;
+  background: var(--page-bg);
   font-family: "Funnel Display", sans-serif;
-  color: white;
+  color: var(--page-text);
   scroll-behavior: smooth;
   overflow-x: hidden;
+  transition: background-color 200ms ease, color 200ms ease;
 }
 
 @layer components {
