@@ -12,6 +12,7 @@ export const myProjects = [
       "Containerized the full stack and configured CI/CD to automatically build, test, and deploy preview environments for pull requests.",
     ],
     href: "https://visualaize-six.vercel.app",
+    githubHref: "https://github.com/priyanshu5ingh",
     logo: "",
     image: "/assets/projects/visualize.jpg",
     tags: [
@@ -55,6 +56,7 @@ export const myProjects = [
       "Containerized pipeline components and set up CI/CD to run scheduled ingestion jobs, with logging and basic observability for pipeline health.",
     ],
     href: "https://8vxiryxuz56z2fzzxhmcie.streamlit.app/",
+    githubHref: "https://github.com/priyanshu5ingh",
     logo: "",
     image: "/assets/projects/news-research.jpg",
     tags: [
@@ -98,6 +100,7 @@ export const myProjects = [
       "Deployed the backend as an API with role‑based access, audit logging, and a React frontend for interactive review workflows.",
     ],
     href: "",
+    githubHref: "https://github.com/priyanshu5ingh",
     logo: "",
     image: "/assets/projects/lawtool5.jpg",
     tags: [
@@ -141,6 +144,7 @@ export const myProjects = [
       "Secured endpoints with authentication/authorization and containerized the app for reproducible deployments.",
     ],
     href: "",
+    githubHref: "https://github.com/priyanshu5ingh",
     logo: "",
     image: "/assets/projects/real-estate.jpg",
     tags: [
@@ -184,6 +188,7 @@ export const myProjects = [
       "Packaged model as a REST API for integration with planning tools and scheduled retraining jobs in CI/CD.",
     ],
     href: "",
+    githubHref: "https://github.com/priyanshu5ingh",
     logo: "",
     image: "/assets/projects/ev-prediction.jpg",
     tags: [
@@ -227,6 +232,7 @@ export const myProjects = [
       "Deployed as a microservice‑style app with separate services for search, booking, and payments; included end‑to‑end tests and containerized orchestration.",
     ],
     href: "",
+    githubHref: "https://github.com/priyanshu5ingh",
     logo: "",
     image: "/assets/projects/airline-booking.jpg",
     tags: [
@@ -277,7 +283,7 @@ export const mySocials = [
   },
   {
     name: "GitHub",
-    href: "https://github.com/proyanshu5ingh",
+    href: "https://github.com/priyanshu5ingh",
     icon: "/assets/socials/github.svg",
   },
   {

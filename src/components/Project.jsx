@@ -6,6 +6,7 @@ const Project = ({
   description,
   subDescription,
   href,
+  githubHref,
   image,
   tags,
   setPreview,
@@ -31,7 +32,7 @@ const Project = ({
           className="flex items-center gap-1 cursor-pointer hover-animation"
         >
           Read More
-          <img src="assets/arrow-right.svg" className="w-5" />
+          <img src="assets/arrow-right.svg" className="w-5" alt="open project details" />
         </button>
       </div>
       <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full" />
@@ -43,6 +44,7 @@ const Project = ({
           image={image}
           tags={tags}
           href={href}
+          githubHref={githubHref}
           closeModal={() => setIsHidden(false)}
         />
       )}
