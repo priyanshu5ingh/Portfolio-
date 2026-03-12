@@ -8,10 +8,12 @@ const ProjectDetails = ({
   tags,
   href,
   githubHref,
+  caseStudyHref,
   closeModal,
 }) => {
   const projectLink = href?.trim();
   const projectGithub = githubHref?.trim();
+  const caseStudyLink = caseStudyHref?.trim();
 
   useEffect(() => {
     const onKeyDown = (event) => {
@@ -72,6 +74,18 @@ const ProjectDetails = ({
               ))}
             </div>
             <div className="flex flex-wrap items-center gap-4">
+              {caseStudyLink ? (
+                <a
+                  href={caseStudyLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"
+                >
+                  Read Case Study
+                  <img src="/assets/arrow-up.svg" className="size-4" alt="open case study" />
+                </a>
+              ) : null}
+
               {projectLink ? (
                 <a
                   href={projectLink}

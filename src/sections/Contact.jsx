@@ -78,6 +78,22 @@ const Contact = () => {
             Whether you're looking to build a new website, improve your existing
             platform, or bring a unique project to life, I'm here to help.
           </p>
+          <div className="flex flex-wrap gap-3">
+            <a
+              href="mailto:priyanshusinghrajput007@gmail.com"
+              className="inline-flex items-center rounded-full px-4 py-2 text-xs font-semibold bg-slate-900 text-white dark:bg-white dark:text-slate-900"
+            >
+              Book a 15-Min Call
+            </a>
+            <a
+              href="https://wa.me/919380305821"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded-full px-4 py-2 text-xs font-semibold border border-slate-400 text-slate-800 dark:text-neutral-100 dark:border-neutral-500"
+            >
+              Message on WhatsApp
+            </a>
+          </div>
         </div>
         <form className="w-full" onSubmit={handleSubmit}>
           <div className="mb-5">

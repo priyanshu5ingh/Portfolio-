@@ -7,6 +7,7 @@ const Project = ({
   subDescription,
   href,
   githubHref,
+  caseStudyHref,
   image,
   tags,
   setPreview,
@@ -45,6 +46,7 @@ const Project = ({
           tags={tags}
           href={href}
           githubHref={githubHref}
+          caseStudyHref={caseStudyHref}
           closeModal={() => setIsHidden(false)}
         />
       )}

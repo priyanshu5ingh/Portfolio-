@@ -36,6 +36,26 @@ function Navigation({ isMobile = false, onNavigate, theme }) {
   );
 }
 
+function HireMeButton({ theme, onNavigate }) {
+  return (
+    <a
+      href="#contact"
+      onClick={(e) => {
+        e.preventDefault();
+        document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+        onNavigate?.();
+      }}
+      className={`inline-flex items-center rounded-full px-4 py-2 text-xs font-semibold transition-colors ${
+        theme === "dark"
+          ? "bg-white text-slate-900 hover:bg-slate-200"
+          : "bg-slate-900 text-white hover:bg-slate-700"
+      }`}
+    >
+      Hire Me
+    </a>
+  );
+}
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -99,6 +119,10 @@ const Navbar = () => {
             {/* Desktop Navigation */}
             <div className="hidden sm:block">
               <Navigation theme={theme} />
+            </div>
+
+            <div className="hidden sm:block">
+              <HireMeButton theme={theme} />
             </div>
 
             {/* Theme Toggle */}
@@ -172,6 +196,9 @@ const Navbar = () => {
           >
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Navigation isMobile theme={theme} onNavigate={() => setIsOpen(false)} />
+              <div className="px-4 pb-3">
+                <HireMeButton theme={theme} onNavigate={() => setIsOpen(false)} />
+              </div>
             </div>
           </motion.div>
         )}

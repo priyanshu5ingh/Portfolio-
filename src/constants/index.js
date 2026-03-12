@@ -13,6 +13,7 @@ export const myProjects = [
     ],
     href: "https://visualaize-six.vercel.app",
     githubHref: "https://github.com/priyanshu5ingh",
+    caseStudyHref: "/case-studies/visualize.html",
     logo: "",
     image: "/assets/projects/visualize.jpg",
     tags: [
@@ -57,6 +58,7 @@ export const myProjects = [
     ],
     href: "https://8vxiryxuz56z2fzzxhmcie.streamlit.app/",
     githubHref: "https://github.com/priyanshu5ingh",
+    caseStudyHref: "/case-studies/news-article-research.html",
     logo: "",
     image: "/assets/projects/news-research.jpg",
     tags: [
@@ -101,6 +103,7 @@ export const myProjects = [
     ],
     href: "",
     githubHref: "https://github.com/priyanshu5ingh",
+    caseStudyHref: "/case-studies/lawtool5.html",
     logo: "",
     image: "/assets/projects/lawtool5.jpg",
     tags: [
